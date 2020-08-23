@@ -8,3 +8,7 @@ a{
     text-transform: capitalize;
     color: black;
 }
+
+*{
+    box-sizing: border-box;
+}
