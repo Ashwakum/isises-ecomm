@@ -6,6 +6,7 @@ const INITIAL_STATE = {
 
 const cartReducer = (state = INITIAL_STATE, action) => {
 
+    //this is testing of azure CI
     switch (action.type) {
 
         case CartActionTypes.TOGGLE_CART_HIDDEN:
