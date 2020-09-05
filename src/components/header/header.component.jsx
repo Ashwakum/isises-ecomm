@@ -7,16 +7,17 @@ import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { createStructuredSelector } from 'reselect';
 import {selectCartHidden} from '../../redux/cart/cart.selectors'
 import {selectCurrentUser} from '../../redux/user/user.selectors'
+
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import CartIcon from '../cart-icon/cart-icon.component';
 
 const Header = ({ currentUser, hidden }) => (
-    <div className='header'>
+    <div  className='header'>
         <Link className='logo-container' to="/">
             <Logo className='logo' />
         </Link>
 
-        <div className='options'>
+        <div  className='options'>
             <Link className='option' to="/shop">
                 SHOP
             </Link>
@@ -25,7 +26,7 @@ const Header = ({ currentUser, hidden }) => (
             </Link>
             {
                 (currentUser ?
-                    <div className='option' onClick={() => auth.signOut()}>
+                    <div  className='option' onClick={() => auth.signOut()}>
                         SIGN OUT
                     </div>
                     :
